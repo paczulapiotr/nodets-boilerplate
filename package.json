@@ -1,0 +1,26 @@
+{
+  "name": "nodes-boilerplate",
+  "version": "1.0.0",
+  "description": "typescript nodejs boilerplate with aliases",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --exec ts-node --files src/index.ts",
+    "build": "rm -rf ./out && tsc -p .",
+    "refresh": "rm -rf ./out ./node_modules ./yarn.lock && yarn install"
+  },
+  "author": "paczulapiotr <paczulapiotr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.14"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}
