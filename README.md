@@ -1,3 +1,2 @@
 # Aliases
-
-add aliases to `src/aliases/aliases.ts` file in following format `"@<alias>": "<relativePath>"`
+Add aliases to tsconfig.json path

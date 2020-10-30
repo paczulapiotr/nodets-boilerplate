@@ -1,6 +1,6 @@
 import BuiltinModule from "module";
 import NodePath from "path";
-import Aliases from './aliases'
+import TsConfig from '../../tsconfig.json'
 
 const rootPath = NodePath.dirname(require.main?.filename!);
 let modules: TsAlias;
@@ -44,5 +44,13 @@ export default function registerAliases(modules: TsAlias | any) {
   };
 }
 
-registerAliases(Aliases);
+let aliases : any = {};
+const paths = TsConfig.compilerOptions.paths
+Object.keys(paths).forEach(k=> {
+  const pathTo = (paths as any)[k][0].replace("/*","").replace("src",".");
+  const key = k.replace("/*","");
+  aliases[key] = pathTo;
+})
+
+registerAliases(aliases);
 
