@@ -1,3 +1,3 @@
 # Aliases
 
-add aliases to `src/aliases/alias.json` file in following format `"@<alias>": "<relativePath>"`
+add aliases to `src/aliases/aliases.ts` file in following format `"@<alias>": "<relativePath>"`

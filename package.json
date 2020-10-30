@@ -4,7 +4,7 @@
   "description": "typescript nodejs boilerplate with aliases",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "yarn run build && node out/index.js",
     "dev": "nodemon --exec ts-node --files src/index.ts",
     "build": "rm -rf ./out && tsc -p .",
     "refresh": "rm -rf ./out ./node_modules ./yarn.lock && yarn install"

@@ -1,5 +1,6 @@
 import BuiltinModule from "module";
 import NodePath from "path";
+import Aliases from './aliases'
 
 const rootPath = NodePath.dirname(require.main?.filename!);
 let modules: TsAlias;
@@ -43,4 +44,5 @@ export default function registerAliases(modules: TsAlias | any) {
   };
 }
 
-registerAliases(require("./alias.json"));
+registerAliases(Aliases);
+

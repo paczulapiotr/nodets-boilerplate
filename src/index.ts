@@ -1,5 +1,6 @@
 import "./aliases";
 import dotenv from "dotenv";
+import Hello from '@hello'
 dotenv.config();
 
-console.log("Boilerplate started");
+Hello();
