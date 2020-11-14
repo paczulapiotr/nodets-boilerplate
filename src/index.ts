@@ -1,6 +1,5 @@
-import './aliases';
 import dotenv from 'dotenv';
-import Hello from '@hello/index';
+import Hello from './hello';
 dotenv.config();
 
 Hello();

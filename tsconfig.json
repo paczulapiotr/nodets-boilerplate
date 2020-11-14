@@ -9,10 +9,6 @@
     ],
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "paths": {
-      "@/*": ["src/*"],
-      "@hello/*": ["src/hello/*"]
-    },
     "target": "es5",
     "module": "commonjs",
     "declarationMap": true,
